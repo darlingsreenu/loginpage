@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="label">User Login</h1>
+            <form class="login_form"method="post"name="form"onsubmit="return validated()">
+                <div class="font">Email or Phone</div>
+                <input autocomplete="off"type="text"name="email">
+                <div id="email_error">Please fill up your Email or Phone</div>
+                <div class="font font2">Password</div>
+                <input type="password"name="password">
+                <div id="pass_error">Please fill up your Password</div>
+                <button type="submit"name="submit">Login</button>
+            </form>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
